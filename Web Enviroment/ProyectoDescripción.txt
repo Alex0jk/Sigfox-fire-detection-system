@@ -1,0 +1,20 @@
+What problem are you going to solve?
+
+In the last 7 years, in Ecuador, more than 57 000 hectares have been affected by forest fires, claiming the lives of thousands of animal and plant species, many of these are Natural Patrimony, unique in their class, a treasure for humanity, without tell that this increases pollution and therefore the damage to people's health.
+
+What are you going to build to solve this problem? How is it different from existing solutions? Why is it useful?
+
+Our solution is to build a surveillance and early warning system. With it we ensure that these and future generations have health and can enjoy the wonderful Ecuadorian biodiversity. Our project through sensors strategically located in the forest and Sigfox technology, providing a constant monitoring system with data storage in the cloud, alerts at the time of the fire accompanied by a report of the state of the fire for safeguard the life of firefighters and guide them better in extinguishing the fire. The usage of sigfox give us the ability to have a distributed monitoring system, that just needs connection to sigfox infrastructure.
+
+How does your solution work? What are the main features? Please specify how you will use the Sigfox DEV Kit in your solution.
+Our solution works with different sigfox device, each one with sensors that can help us detect fire, give localization and general information of the location. Each device will send data to sigfox cloud periodically. When a fire is detected, that device will send data more frequently than usual so firemen can respond faster. All the data that is gather will be stored in the cloud and will be accessed with a web API and a web monitoring system.
+
+List the hardware and software you will use to build this.
+- Thinxtra x-kit RC4
+- Arduino
+- GPS
+- Temperature, humidity  and pressure sensors
+- Light sensors
+- Gas detection sensors (CO2, CO, etc)
+- Raspberry Pi
+- Amazon Web Services
