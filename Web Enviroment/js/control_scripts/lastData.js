@@ -1,3 +1,5 @@
+// This files allows the load of a tables with the last data entries by node.
+
 var sigfoxLastData;
 
 function createTemplate(sigfoxData) {

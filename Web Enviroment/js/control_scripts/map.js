@@ -1,3 +1,5 @@
+// This files allows the setup of maps and markers
+
 var map;
 var markers = [undefined, undefined];
 

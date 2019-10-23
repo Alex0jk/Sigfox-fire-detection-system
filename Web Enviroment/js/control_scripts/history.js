@@ -1,3 +1,5 @@
+// This files allows to load a table and details of all entries of all nodes
+
 var sigfoxList;
 
 function createHistoryTemplate(sigfoxData) {

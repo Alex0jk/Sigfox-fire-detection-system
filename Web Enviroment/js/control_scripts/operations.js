@@ -1,9 +1,11 @@
-async function getSigfoxHistory() {
+// This file contains some basic operations that are used through the whole site
+
+async function getSigfoxHistory() { // This operations gets all data from the Dynamo Database calling a AWS Lambda Function
     var miInit = {
-        method: 'POST',
+        method: 'GET',
     };
 
-    return await fetch(' https://ofamvvl6re.execute-api.us-east-2.amazonaws.com/default/readDynamo', miInit)
+    return await fetch('READ_DATA_URI', miInit)
         .then(function (response) {
             return (response.json());
         })
@@ -14,7 +16,7 @@ async function getSigfoxHistory() {
         });
 }
 
-async function getLastNodesLecture(sigfoxList){
+async function getLastNodesLecture(sigfoxList){ // This operations returns the last entries of all the nodes conected to the system
     let lastItemsSigfoxList=[];
     let length = sigfoxList.length
     for(var i=0; i<length; i++){
@@ -27,7 +29,7 @@ async function getLastNodesLecture(sigfoxList){
     return lastItemsSigfoxList;
 }
 
-function stablishAlertState(temperature, gas, fire){
+function stablishAlertState(temperature, gas, fire){ // This operations returns the alert states based on temperatur, carbon monoxide and fire existance
     if(temperature <= 45){
         if( gas < 70 ){
             if(fire == 0 ){
